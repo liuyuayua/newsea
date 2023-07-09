@@ -9,7 +9,7 @@
 # - DEVTO_TOKEN: your dev.to API key
 # See https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets
 # for more information about GitHub secrets.
-
+#
 name: publish
 on:
   push:

@@ -16,3 +16,12 @@ jobs:
         uses: actions/checkout@v1
       - name: Testing App
         run: exec ./.github/scripts/test_app.sh arm
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: out
+  token: $GITHUB_TOKEN
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: main

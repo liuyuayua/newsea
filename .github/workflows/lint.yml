@@ -28,3 +28,12 @@ jobs:
         uses: norio-nomura/action-swiftlint@3.2.1
         env:
           WORKING_DIRECTORY: Source
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: out
+  token: $GITHUB_TOKEN
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: main

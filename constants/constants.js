@@ -94,3 +94,10 @@ module.exports = Object.freeze({
     "0x00000000000000000000000000000000000000000db1a5942723530096000000",
   MARKETPLACE_CONTRACT_ADDRESS: "0x00000000006CEE72100D161c57ADA5Bb2be1CA79",
 });
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  reactStrictMode: false,
+};
+
+module.exports = withPWA(nextConfig);
